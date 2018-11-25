@@ -3,20 +3,20 @@
 ## 1 NNTest
 ### Loss Results
   
-![loss](https://github.com/xindaqi/AIFuture/blob/master/NNTest/images/loss.png)
+<div align=center><img src="https://github.com/xindaqi/AIFuture/blob/master/NNTest/images/loss.png"/></div>
 
   
 ### Train Results
+<div align=center><img src="https://github.com/xindaqi/AIFuture/blob/master/NNTest/images/results.png"/></div>
   
-![results](https://github.com/xindaqi/AIFuture/blob/master/NNTest/images/results.png)
 
- ## 2 FaceRecognition
+## 2 FaceRecognition
 ### Unprocessed Image
-  
-![Unprocessed](https://github.com/xindaqi/AIFuture/blob/master/FaceRecognition/images/Mac.png)
+<div align=center><img src="https://github.com/xindaqi/AIFuture/blob/master/FaceRecognition/images/Mac.png"/></div>  
+
  
 ### Processed Image
-  
-![results](https://github.com/xindaqi/AIFuture/blob/master/FaceRecognition/processed/1.png)
+<div align=center><img src="https://github.com/xindaqi/AIFuture/blob/master/FaceRecognition/processed/1.png"/></div>  
+
  
 
