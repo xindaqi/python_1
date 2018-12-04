@@ -7,43 +7,49 @@ from pylab import mpl
 mpl.rcParams["font.serif"] = ['simhei']
 
 
-
+# input simulation data
+# include x,y,noise
 x_data = np.linspace(-1, 1, 250, dtype=np.float32)[:, np.newaxis] 
 
 noise = np.random.normal(0, 0.05, x_data.shape).astype(np.float32)
 
 y_data = np.square(x_data) - 0.5*x_data + noise
 
-
+# tensorflow simulation data
 xs = tf.placeholder(tf.float32, [None, 1])
 ys = tf.placeholder(tf.float32, [None, 1])
 
+#from input to layer1:  input size, output size
 input_size_1 = 1
 output_size_1 = 10
-
+# from layer1 to output: input size, output size
 input_size_2 = 10
 output_size_2 = 1
 
-
+# from input to layer1's weights
 weights_1 = tf.Variable(tf.random_normal([input_size_1, output_size_1]))
+# from layer1's to output weights
 weights_2 = tf.Variable(tf.random_normal([input_size_2, output_size_2]))
 
-
+# from input to layer1's biases
 biases_1 = tf.Variable(tf.zeros([1, output_size_1]))
+# from layer1's to output biases
 biases_2 = tf.Variable(tf.zeros([1, output_size_2]))
 
-
+# forward process, from input to layer1
 layer_1 = tf.nn.relu(tf.matmul(xs, weights_1) + biases_1)
+# forward process, from layer1 to output
 prediction = tf.matmul(layer_1, weights_2) + biases_2
 
+# backward process, reality output and theoretical output's difference value 
 loss = tf.reduce_mean(tf.reduce_sum(tf.square(ys-prediction), reduction_indices=[1]))
-
+# Gradient desdent optimizer
 train_step = tf.train.GradientDescentOptimizer(0.1).minimize(loss)
 
 
 
-
-def __loss():
+# loss function, get the the loss image in train process
+def loss():
 	with tf.Session() as sess:
 		init_op = tf.global_variables_initializer()
 		sess.run(init_op)
@@ -65,7 +71,9 @@ def __loss():
 		plt.show()
 		plt.savefig('images/loss.png', format='png')
 		plt.close()
-def __result():
+
+# Visualization result in different train process
+def result():
 	with tf.Session() as sess:
 		init_op = tf.global_variables_initializer()
 		sess.run(init_op)
@@ -87,20 +95,26 @@ def __result():
 				pre = sess.run(prediction, feed_dict={xs: x_data})
 				# plt.ion()
 				# plt.figure(i)
+				# six images in one figure 
+				# use subplot(2,3, a),first and second 
+				# params: define a 2x3 dimention figure
+				# third params is image number
 				plt.subplot(2,3,a).set_title("Group{} results:".format(str(a)))
 				plt.plot(x, pre, 'r')
+				# s params is set point size
 				plt.scatter(x, y,s=2,c='b')
 				plt.xlabel("x_data")
 				plt.ylabel("y_data")
 		plt.ion()
 		plt.title("Results")
+		# adjust six images position
 		plt.subplots_adjust(wspace=0.3, hspace=0.5)
 		plt.show()
 		plt.savefig('images/results.png', format='png')
 		plt.close()
 
-__loss()
-__result()
+loss()
+result()
 
 
 	
