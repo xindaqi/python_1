@@ -1,14 +1,16 @@
 # AIFuture
 
 ## 1 NNTest
-### Loss Results
+python3 NNTest.py
+### 1.1 Loss Results
 <div align=center><img src="https://github.com/xindaqi/AIFuture/blob/master/NNTest/images/loss.png"/></div>
 
-### Train Results
+### 1.2 Train Results
 <div align=center><img src="https://github.com/xindaqi/AIFuture/blob/master/NNTest/images/results.png"/></div>
   
 
 ## 2 FaceRecognition
+python3 findFaceInImages.py
 ### 2.1 Single Face
 #### 2.1.1 Source Image
 <div align=center><img src="https://github.com/xindaqi/AIFuture/blob/master/FaceRecognition/images/Mac.png"/></div>  
@@ -22,5 +24,12 @@
 
 #### 2.2.2 Marked image with bounding boxes
 <div align=center><img src="https://github.com/xindaqi/AIFuture/blob/master/FaceRecognition/processed/AllStarEast.png"/></div>
+
+## 3 Get tickets info
+### 3.1 Tutorial
+python3 getData.py 深圳 上海 2018-12-25
+### 3.2 Result
+<div align=center><img src="https://github.com/xindaqi/AIFuture/blob/master/ticketsPy/results/resultsone.png"></div>
+
  
 
