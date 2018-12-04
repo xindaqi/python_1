@@ -19,7 +19,7 @@ python3 findFaceInImages.py
 #### 2.1.1 Source Image
 <div align=center><img src="https://github.com/xindaqi/AIFuture/blob/master/FaceRecognition/images/Mac.png"/></div>  
 
-### 2.1.2 Marked image with bounding box
+#### 2.1.2 Marked image with bounding box
 <div align=center><img src="https://github.com/xindaqi/AIFuture/blob/master/FaceRecognition/processed/1.png"/></div>  
 
 ### 2.2 Multi face
@@ -36,6 +36,16 @@ python3 getData.py 深圳 上海 2018-12-25
 ```
 ### 3.2 Result
 <div align=center><img src="https://github.com/xindaqi/AIFuture/blob/master/ticketsPy/results/resultsone.png"></div>
+
+## 4 Get face images
+```python
+python3 getImage.py
+```
+### 4.1 Get sixty images
+<div align=center><img src="https://github.com/xindaqi/AIFuture/blob/master/getFaceImage/faceImages/getSixtyFace.png"></div>
+
+### 4.2 Downloading status
+<div align=center><img src="https://github.com/xindaqi/AIFuture/blob/master/getFaceImage/faceImages/downloadStatus.png"></div>
 
  
 
