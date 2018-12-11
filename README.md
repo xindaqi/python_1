@@ -47,5 +47,13 @@ python3 getImage.py
 ### 4.2 Downloading status
 <div align=center><img src="https://github.com/xindaqi/AIFuture/blob/master/getFaceImage/faceImages/downloadStatus.png"></div>
 
+## 5 Cluster Algorithm
+### 5.1 Tutorial
+```python
+python2 kmeans.py
+```
+### 5.2 Results
+<div align=center><img src="https://github.com/xindaqi/AIFuture/blob/master/clusterAlgorithm/results/cluster.png"></div>
+
  
 
