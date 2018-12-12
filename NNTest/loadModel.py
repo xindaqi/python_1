@@ -37,7 +37,7 @@ def loadModel():
 
 		plt.show()
 		plt.savefig('images/loadModelPredict.png', format='png')
-		获取模型变量
+		# 获取模型变量
 		print("Load Weights_1 from model: {}".format(sess.run('weights_1:0')))
 		print("Load Weights_2 from model: {}".format(sess.run('weights_2:0')))
 		print("Load Biases_1 from model: {}".format(sess.run('biases_1:0')))
