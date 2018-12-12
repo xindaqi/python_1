@@ -9,7 +9,9 @@ python3 NNTest.py
 
 ### 1.2 Train Results
 <div align=center><img src="https://github.com/xindaqi/AIFuture/blob/master/NNTest/images/results.png"/></div>
-  
+
+### 1.3 Load Model for Transfer Training
+<div align=center><img src="https://github.com/xindaqi/AIFuture/blob/master/NNTest/images/loadModelPredict.png"></div>  
 
 ## 2 FaceRecognition
 ```python
