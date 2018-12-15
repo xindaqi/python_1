@@ -57,5 +57,20 @@ python2 kmeans.py
 ### 5.2 Results
 <div align=center><img src="https://github.com/xindaqi/AIFuture/blob/master/clusterAlgorithm/results/cluster.png"></div>
 
+## 6 NN tensorboard display
+### 6.1 Turtorial
+```python
+python3 NNtensorboard.py
+tensorboard --logdir=~/logs
+```
+### 6.2 Reuslts
+#### 6.2.1 Global Graph Architecture
+<div align=center><img src="https://github.com/xindaqi/AIFuture/blob/master/tensorboard/NN/results/GraphGlobal.png"></div>
+
+#### 6.2.2 Module Graph Architecture
+<div align=center><img src="https://github.com/xindaqi/AIFuture/blob/master/tensorboard/NN/results/GraphModule.png"></div>
+
+
+
  
 
