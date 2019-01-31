@@ -102,13 +102,15 @@ tensorboard --logdir=/logdir
 <div align=center>Fig.7.1 VGGNet sturcture</div>
 
 
-### 7.2 Results
+### 7.3 Results
 
 <div align="center"><img src="https://github.com/xindaqi/AIFuture/blob/master/VGGNet/train_result_image/sourcedata.png"></div>
 <div align="center">Fig.7.2 Source Data</div>
 
-<div align="center" src="https://github.com/xindaqi/AIFuture/blob/master/VGGNet/train_result_image/conv_gp_1.png"></div>
+
+<div align="center"><img src="https://github.com/xindaqi/AIFuture/blob/master/VGGNet/train_result_image/conv_gp_1.png"></div>
 <div align="center">Fig.7.3 Different convlution image feature</div>
+
 
 <div align=center><img src="https://github.com/xindaqi/AIFuture/blob/master/VGGNet/train_result_image/cost.png"></div>
 <div align=center>Fig.7.4 Cross entropy</div>
